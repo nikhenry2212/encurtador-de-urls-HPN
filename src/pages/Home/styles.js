@@ -16,10 +16,13 @@ export const ContainerContent = styled.View`
 `;
 export const Title = styled.Text`
 font-size: 35px;
-color: #fff;
+color: #Fff;
 font-weight: bold;
 text-align: center;
+
+
 `;
+
 export const SubTitle = styled.Text`
 font-size: 18px;
 color: #fff;
@@ -42,7 +45,7 @@ export const BoxIcon = styled.View`
   padding-left: 10px;
   width: 11%;
   height: 50px;
-  background-color: rgba(255, 255, 255,0.15);
+  background-color: rgba(255, 255, 255,0.30);
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
 
@@ -54,7 +57,7 @@ export const Input = styled.TextInput`
   width: 90%;
   height: 50px;
   padding: 10px;
-  background-color: rgba(255, 255, 255,0.15);
+  background-color: rgba(255, 255, 255,0.30);
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
   font-size: 17px;

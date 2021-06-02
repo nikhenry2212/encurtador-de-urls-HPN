@@ -5,13 +5,18 @@ import { Container, Title, ListLinks } from './styles';
 import StatusBarPage from '../../components/StatusBarPage';
 import Menu from '../../components/Menu';
 import ListItem from '../../components/ListItem';
+import { LinearGradient } from 'expo-linear-gradient';
 
 export default function MyLinks() {
   return (
     <Container>
+      <LinearGradient
+         colors={['#70cbe1', '#F681CD']}
+         style={{ flex: 1, justifyContent: 'center' }}
+      >
       <StatusBarPage
         barStyle="light-content"
-        backgroundColor="#2E4F53"
+        backgroundColor="#70cbe1"
       />
 
       <Menu />
@@ -27,6 +32,7 @@ export default function MyLinks() {
         contentContainerStyle={{paddingBottom: 20}}
         showVerticalScrollIndicator={false}
       />
+      </LinearGradient>
     </Container>
   )
 }
