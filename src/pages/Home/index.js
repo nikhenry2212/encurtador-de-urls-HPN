@@ -28,6 +28,8 @@ import ModalLink from '../../components/ModalLink';
 
 import api from '../../services/api';
 
+import { saveLink } from '../../utils/storeLinks';
+
 export default function Home() {
 
   const [loading, setLoading] = useState(false)
@@ -47,6 +49,10 @@ export default function Home() {
       console.log(response.data);
       setData(response.data);
       setModalVisible(true);
+
+      //Deu tudo certo,  preciso salvar esse link para conseguir levar para /mylinks
+
+      saveLink('hpnlinks',response.data);
 
       Keyboard.dismiss();//fechar teclado
       setLoading(false);
